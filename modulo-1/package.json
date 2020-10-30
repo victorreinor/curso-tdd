@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cls && jest",
-    "test:watch": "cls && jest --watchAll"
+    "test": "npx jest",
+    "test:watch": "npx jest --watchAll",
+    "test:debug": "ndb jest"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,12 @@
     "@babel/preset-env": "^7.12.1",
     "@types/jest": "^26.0.14",
     "babel-jest": "^26.6.0",
-    "jest": "^26.5.2"
+    "jest": "^26.5.2",
+    "ndb": "^1.1.5",
+    "prettier": "^2.1.2"
+  },
+  "dependencies": {
+    "dinero.js": "^1.8.1",
+    "lodash": "^4.17.20"
   }
 }
